@@ -8,9 +8,11 @@ function 燈數 (num: number) {
     } else if (num >= 9 && num < 15) {
         y = 4
         x = 14 - num
-    } else {
+    } else if (num >= 15 && num < 20) {
         x = 0
         y = 18 - num
+    } else {
+    	
     }
     led.plot(x, y)
 }
